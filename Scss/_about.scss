@@ -1,0 +1,56 @@
+.content-ab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 20rem;
+
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__left {
+            flex-basis: 50%;
+            max-width: 130%;
+
+            .left-content {
+                padding: 2rem 0;
+                margin-right: 10rem;
+                margin-left: -10rem;
+                width: 100%;
+
+                h3 {
+                    color: var(--color3);
+                    text-transform: uppercase;
+                    font-size: 3.5rem;
+                    font-weight: 400;
+                }
+
+                span {
+                    color: var(--color2);
+                }
+
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+
+        }
+
+        &__right {
+            flex-basis: 50%;
+
+            .image {
+                height: 60%;
+                width: 60%;
+
+                img {
+                    margin-left: 5rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.product {
+    background-color: var(--color3);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    padding: 10rem;
+    cursor: pointer;
+
+    .card {
+        align-self: stretch;
+        position: relative;
+
+        .title {
+            position: absolute;
+            top: -8rem;
+            font-size: 3rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: var(--color1);
+
+            span {
+                color: var(--color2);
+                margin-left: .6rem;
+            }
+
+        }
+
+        .img-box {
+            height: 90%;
+            width: 90%;
+            position: relative;
+
+
+
+            .overlay {
+                background-color: rgb(202, 168, 181);
+                position: absolute;
+                height: 69vh;
+                width: 100%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+                transition: all 0.4s ease-in-out 0s;
+
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                padding: 1rem;
+                z-index: 1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transition: all .5s cubic-bezier(.13, .66, 1, .27);
+                -webkit-transition: all .5s cubic-bezier(.13, .66, 1, .27);
+                -moz-transition: all .5s cubic-bezier(.13, .66, 1, .27);
+                -ms-transition: all .5s cubic-bezier(.13, .66, 1, .27);
+                -o-transition: all .5s cubic-bezier(.13, .66, 1, .27);
+
+                h2 {
+                    font-size: 2.3rem;
+                    font-weight: 300;
+
+                }
+
+                p {
+                    font-size: 1.3rem;
+                    font-weight: 100;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+
+            &:hover {
+                .overlay {
+                    opacity: .8;
+                }
+
+                .content {
+                    top: 50%;
+                    left: 50%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
