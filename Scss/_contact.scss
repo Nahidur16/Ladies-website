@@ -6,8 +6,9 @@
     height: 80vh;
 
     &__left {
-        margin-left: 3.6rem;
+        margin-left: 4.8rem;
         flex-basis: 50%;
+        max-width: 80rem;
 
         h2 {
             font-size: 3.5rem;
@@ -45,28 +46,134 @@
         }
     }
 
-
-
-
 }
 
 .contact-form {
-    padding: 1rem 5rem;
+    margin: 2rem 1rem;
+    width: 40%;
+    height: 60vh;
+    padding: 2rem;
+    margin-top: 7rem;
 
-    .formtwo {
+    form {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin: 0 auto;
-        max-width: 70rem;
-        height: 45rem;
-        text-align: left;
-        padding: 1rem 0;
+        justify-content: space-between;
 
-        .subject,
-        .content {
-            width: 80%;
-            margin: 0 auto;
+        .first-input {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            margin-right: 1.2rem;
+
+            .flex {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    text-transform: capitalize;
+
+                }
+
+                .input {
+                    width: 100%;
+                    padding: .9rem 2.4rem;
+                    border-radius: 4px;
+                    border: 1px solid var(--color2);
+                    outline: none;
+
+
+                }
+            }
+
         }
+
+        .second-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+
+            label {
+                font-size: 1.5rem;
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+
+            input {
+                width: 100%;
+                padding: .9rem 2.4rem;
+                border-radius: 4px;
+                border: 1px solid var(--color2);
+                outline: none;
+            }
+        }
+
+        .third-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 1rem 0;
+            margin-bottom: 1.3rem;
+
+            label {
+                font-size: 1.5rem;
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+
+            .form-control {
+                width: 100%;
+                padding: .9rem 2.4rem;
+                border-radius: 4px;
+                border: 1px solid var(--color2);
+                outline: none;
+            }
+        }
+    }
+
+}
+
+.input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 1rem;
+    ;
+    margin-bottom: 1rem;
+    ;
+    margin-right: 1.5rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+::placeholder {
+    color: #ccc;
+    font-size: 1.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 100;
+    width: 100%;
+}
+
+.contact-form {
+
+    .btn {
+
+        margin: 0 auto;
+        display: block;
+        border: none;
+        outline: none;
+        width: 50%;
+        background-color: var(--color2);
+        padding: 1.4rem 1.7rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+        border-radius: 4px;
     }
 }

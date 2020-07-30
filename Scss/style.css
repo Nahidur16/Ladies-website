@@ -112,9 +112,10 @@ body {
 }
 
 .contact__left {
-  margin-left: 3.6rem;
+  margin-left: 4.8rem;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  max-width: 80rem;
 }
 
 .contact__left h2 {
@@ -153,10 +154,14 @@ body {
 }
 
 .contact-form {
-  padding: 1rem 5rem;
+  margin: 2rem 1rem;
+  width: 40%;
+  height: 60vh;
+  padding: 2rem;
+  margin-top: 7rem;
 }
 
-.contact-form .formtwo {
+.contact-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,19 +169,235 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 auto;
-  max-width: 70rem;
-  height: 45rem;
-  text-align: left;
-  padding: 1rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.contact-form .formtwo .subject,
-.contact-form .formtwo .content {
-  width: 80%;
+.contact-form form .first-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  margin-right: 1.2rem;
+}
+
+.contact-form form .first-input .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form form .first-input .flex label {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.contact-form form .first-input .flex .input {
+  width: 100%;
+  padding: .9rem 2.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--color2);
+  outline: none;
+}
+
+.contact-form form .second-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.contact-form form .second-input label {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.contact-form form .second-input input {
+  width: 100%;
+  padding: .9rem 2.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--color2);
+  outline: none;
+}
+
+.contact-form form .third-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0;
+  margin-bottom: 1.3rem;
+}
+
+.contact-form form .third-input label {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.contact-form form .third-input .form-control {
+  width: 100%;
+  padding: .9rem 2.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--color2);
+  outline: none;
+}
+
+.input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+  width: 100%;
+}
+
+:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+  width: 100%;
+}
+
+::-ms-input-placeholder {
+  color: #ccc;
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+  width: 100%;
+}
+
+::placeholder {
+  color: #ccc;
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 100;
+  width: 100%;
+}
+
+.contact-form .btn {
   margin: 0 auto;
+  display: block;
+  border: none;
+  outline: none;
+  width: 50%;
+  background-color: var(--color2);
+  padding: 1.4rem 1.7rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: var(--color3);
+  height: 30vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footercontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footercontainer h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color1);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer .footercontainer h3 span {
+  color: var(--color2);
+  font-style: italic;
+}
+
+.footer .footercontainer ul {
+  color: var(--color2);
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.footer .footercontainer ul .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2.4rem;
+}
+
+.copy {
+  font-size: 1.5rem;
+  color: var(--color1);
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .header {
